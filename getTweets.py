@@ -32,15 +32,12 @@ try:
     api.verify_credentials()
     print('Successful Authentication')
     try:
-        tweets = tweepy.Cursor(api.search_tweets, q=hashtag, lang = "tr", count=15).items(5)
+        tweets = tweepy.Cursor(api.search_tweets, q=hashtag, lang = "tr", count=15).pages(5)
         #print(type(tweets))
         
         for tweet in tweets:
-            print(tweet.user.name,tweet.id,tweet.created_at,tweet.favorite_count, tweet.retweet_count)
-            try:
-                data.append([tweet.user.screen_name,tweet.text.encode('utf-8'),tweet.retweeted_status.favorite_count, tweet.retweet_count, str(tweet.created.date())])
-            except: 
-                data.append([tweet.user.screen_name, tweet.text.encode('utf-8'), tweet.favorite_count, tweet.retweet_count, str(tweet.created_at.date())])    
+            print(tweet.id)
+          
 
     except Exception as ex:
         print(ex)
