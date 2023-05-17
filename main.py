@@ -2,8 +2,8 @@ import tweepy as tw
 import pandas as pd
 import datetime
 # your Twitter API key and API secret
-my_api_key = "ukC1eP3Epq43gIYwbBq4knLXF"
-my_api_secret = "e6uTMsSgual31w5EfR1n5kfvN9ZqKoj15WgoPLsk0BBD8LZDhX"
+my_api_key = ""
+my_api_secret = ""
 created_on = datetime.datetime.now()
 
 # authenticate
