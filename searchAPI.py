@@ -11,10 +11,11 @@ class DateTimeEncoder(JSONEncoder):
             return obj.isoformat()
 
 # API anahtarları
-consumer_key = "ukC1eP3Epq43gIYwbBq4knLXF"
-consumer_secret = "e6uTMsSgual31w5EfR1n5kfvN9ZqKoj15WgoPLsk0BBD8LZDhX"
-access_token = "2815936960-mS7TT9j5uQ5B12Zfr5rS1nd5E0Ugsh0HZSODjN4"
-access_token_secret = "H2P2ZyIM1G2Nt8dwBZvpiuBNrr1VBOC72BZvRyhyB9nm1"
+consumer_key = ""
+consumer_secret = ""
+access_token = ""
+access_token_secret = ""
+
 
 # Tarih aralığı
 start_date = "2022-01-01"
